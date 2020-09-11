@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+    "item-1 item-1 item-1"
+    "item-1 item-1 item-1"
+    "item-2 item-2 item-3"
+    "item-4 item-5 item-5"
+    "item-6 item-6 item-6"
+    "item-7 item-7 item-8"
+    "item-9 item-10 item-10"
+    "item-11 item-11 item-11"
+    "item-12 item-13 item-14";
+    
+}
+
+.item-1{
+    background-color: blueviolet;
+    height: 100vh;
+    grid-area: item-1;
+}
+.item-2{
+    background-color: rebeccapurple;
+  
+    grid-area: item-2;
+}
+.item-3{
+    background-color: rgb(164, 110, 219);
+  
+    grid-area: item-3;
+}
+.item-4{
+    background-color: rgb(0, 0, 0);
+  
+    grid-area: item-4;
+}
+.item-5{
+    background-color: rgb(21, 156, 93);
+  
+    grid-area: item-5;
+}
+.item-6{
+    background-color: rgb(219, 117, 110);
+  
+    grid-area: item-6;
+}
+.item-7{
+    background-color: rgb(107, 43, 167);
+  
+    grid-area: item-7;
+}
+.item-8{
+    background-color: rgb(68, 59, 77);
+  
+    grid-area: item-8;
+}
+.item-9{
+    background-color: rgb(164, 110, 219);
+  
+    grid-area: item-9;
+}
+.item-10{
+    background-color: rgb(29, 51, 180);
+  
+    grid-area: item-10;
+}
+.item-11{
+    background-color: rgb(0, 110, 255);
+  
+    grid-area: item-11;
+}
+.item-12{
+    background-color: rgb(163, 21, 21);
+  
+    grid-area: item-12;
+}
+.item-13{
+    background-color: rgb(136, 192, 32);
+  
+    grid-area: item-13;
+}
+.item-14{
+    background-color: rgb(31, 143, 177);
+  
+    grid-area: item-14;
+}
+
+
+.programacion{
+    height: 700px;
+    background-color: rgb(210, 230, 174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+
+.programacion-header{
+    width: 90%;
+    height: 200px;
+    margin: 0px auto;
+    background-color: rgb(104, 126, 65);
+}
+.calendario{
+    display: flex;
+    width: 90%;
+    flex-grow: 1;
+    margin: 0px auto;
+    background-color: rgb(23, 30, 97);
+}
+
+.first, .second, .third, .fourth{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.first{
+    background-color: rgb(150, 41, 92);
+}
+.second{
+    background-color: rgb(204, 92, 144);
+}
+.third{
+    background-color: rgb(83, 33, 57);
+}
+.fourth{
+    background-color: rgb(0, 0, 0);
+}
+
+.images, .content-header{
+    flex-grow: 1;
+}
+.images{
+    background-color: rgb(31, 185, 52);
+}
+
+.aprende{
+    background-color: red;
+    height: 700px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descubre{
+    background-color: rgb(253, 154, 154);
+    height: 700px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
